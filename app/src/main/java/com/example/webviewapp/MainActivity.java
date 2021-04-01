@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         myWebView = (WebView) findViewById(R.id.my_webview);
         myWebView.loadUrl("https://wwwlab.iit.his.se/a19jimsa/Mobilapplikationsdesignprojekt/");
         myWebView.setWebViewClient(new WebViewClient());
+        myWebView.getSettings().setJavaScriptEnabled(true);
 
         /*
         * Rename your App. Tip: Values->Strings
