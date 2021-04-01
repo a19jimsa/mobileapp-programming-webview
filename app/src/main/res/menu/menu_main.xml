@@ -12,4 +12,9 @@
         android:orderInCategory="110"
         android:title="@string/action_internal_web"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_internal_web"
+        android:orderInCategory="110"
+        android:title="@string/action_internal_web"
+        app:showAsAction="never" />
 </menu>
