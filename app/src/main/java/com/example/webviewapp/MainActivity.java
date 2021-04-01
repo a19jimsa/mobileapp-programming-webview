@@ -30,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        myWebView = (WebView) findViewById(R.id.my_webview);
+        myWebView.setWebViewClient(new WebViewClient());
+        myWebView.getSettings().setJavaScriptEnabled(true);
 
         /*
         * Rename your App. Tip: Values->Strings
@@ -82,20 +85,13 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_external_web) {
-            myWebView = (WebView) findViewById(R.id.my_webview);
             myWebView.loadUrl("https://wwwlab.iit.his.se/a19jimsa/Mobilapplikationsdesignprojekt/");
-            myWebView.setWebViewClient(new WebViewClient());
-            myWebView.getSettings().setJavaScriptEnabled(true);
-            Log.d("==>","Will display external web page");
             return true;
         }
 
         if (id == R.id.action_internal_web) {
             Log.d("==>","Will display internal web page");
-            myWebView = (WebView) findViewById(R.id.my_webview);
             myWebView.loadUrl("file:///android_asset/about.html");
-            myWebView.setWebViewClient(new WebViewClient());
-            myWebView.getSettings().setJavaScriptEnabled(true);
             return true;
         }
 
