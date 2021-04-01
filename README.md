@@ -3,6 +3,35 @@
 
 **Skriv din rapport här!**
 
+Uppgiften gick ut på att skapa en app som länkar till två hemsidor. En intern som ligger lokalt och en sida som ligger extern.
+
+För att möjligöra detta krävs det att skapa en ny webbvy för att göra detta i Android krävs det att man skapar ett nytt objekt och skapar en ny vy i xml.
+Koden nedan är xml och har layout och ett id som sedan kommer läsas från koden och köras när den anropas.
+```
+<WebView
+    //Detta är koden med ett unikt id.
+    android:id="@+id/my_webview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    />
+ 
+ ```
+ Här börjar koden att läsa in id:t och hämtar layouten för det objektet.
+ För att sedan skapa detta objekt krävs följande kod:
+ ```
+ @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        
+        myWebView = (WebView) findViewById(R.id.my_webview);
+        myWebView.setWebViewClient(new WebViewClient());
+        //Här sätts att javascript ska köras på sidan.
+        myWebView.getSettings().setJavaScriptEnabled(true);
+```
+
 _Du kan ta bort all text som finns sedan tidigare_.
 
 ## Följande grundsyn gäller dugga-svar:
