@@ -49,8 +49,8 @@ När respektive funktion körs kommer sidan laddas in som antingen är lokal ell
 
 Så här ser resultatet ut för interna sidan:
 
-<img src="intern.pnh" width="100">
+<img src="intern.png" width="300">
 
 och så här för externa hemsidan:
 
-<img src="extern.png" width="100">
+<img src="extern.png" width="300">
