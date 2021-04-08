@@ -49,8 +49,8 @@ När respektive funktion körs kommer sidan laddas in som antingen är lokal ell
 
 Så här ser resultatet ut för interna sidan:
 
-![](intern.png)
+![](intern.png | width=100)
 
 och så här för externa hemsidan:
 
-![](extern.png)
+![](extern.png | width=100)
