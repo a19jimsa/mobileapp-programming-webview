@@ -45,6 +45,12 @@ Här refererar myWebView till layouten i XML som skapades tidigare. Och länkas 
         myWebView.loadUrl("file:///android_asset/about.html");
     }
 ```
+När respektive funktion körs kommer sidan laddas in som antingen är lokal eller extern och ritas ut i webbvyn. Beroende på vilken man väljer i menyn. Sidan som laddas in som intern är en html fil som är skapad och tillagd i android-mappen asset.
+
+Så här ser resultatet:
+
+
+
 
 _Du kan ta bort all text som finns sedan tidigare_.
 
